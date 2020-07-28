@@ -1,0 +1,125 @@
+{
+  "categorias": [
+    {
+      "titulo": "Dev",
+      "link": "https://www.alura.com.br/formacao-front-end",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Conceitos, Técnicas e Novidades sobre Programação"
+      },
+      "videos": [
+        {
+          "titulo": "Gerenciamento de estado com React",
+          "url": "https://www.youtube.com/watch?v=vouajCeALp8"
+        },
+        {
+          "titulo": "React JS - MELHOR GUIA para Iniciantes!",
+          "url": "https://www.youtube.com/watch?v=Ws9WVHhNq5M"
+        },
+        {
+          "titulo": "5 dicas INFALÍVEIS para se atualizar sobre REACT",
+          "url": "https://www.youtube.com/watch?v=C80sX3uS5oA"
+        },
+        {
+          "titulo": "Como fazer um SITE RÁPIDO com GITHUB PAGES? | Handshake #4",
+          "url": "https://www.youtube.com/watch?v=5B4bHSiOOO8&list=PLt57TgA24uShu8GUqM6JJlhTeVk602Ahf&index=8"
+        },
+        {
+          "titulo": "O que é JavaScript?",
+          "url": "https://www.youtube.com/watch?v=6IuQUgeDPg0"
+        },
+        {
+          "titulo": "EXPLICANDO COMO O MAIOR MISTÉRIO DO MINECRAFT FOI RESOLVIDO...",
+          "url": "https://www.youtube.com/watch?v=LYgUH6jZsIc&list=LLd0pBMAUWBB7VDv5vK3S1rg&index=64"
+        },
+        {
+          "titulo": "JSON // Dicionário do Programador",
+          "url": "https://www.youtube.com/watch?v=P81dE-tkaaA"
+        }        
+      ]
+    },
+    {
+      "titulo": "Data Science | Business Analytics | Business Intelligence",
+      "cor": "rgb(197 54 54)",
+      "link_extra": {
+        "text": "Conceitos, Cursos e Notícias"
+      },
+      "videos": [
+        {
+          "titulo": "QUAL AS DIFERENÇAS ENTRE BUSINESS INTELLIGENCE, DATA ANALYTICS, E DATA SCIENTIST",
+          "url": "https://www.youtube.com/watch?v=jIBsYAw5kng"
+        },
+        {
+          "titulo": "Como ingressar no MERCADO de DATA SCIENCE",
+          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+        },
+        {
+          "titulo": "Precisa de FACULDADE pra trabalhar com DATA SCIENCE",
+          "url": "https://www.youtube.com/watch?v=a6StZPu-16I"
+        },
+        {
+          "titulo": "O que é Data Science?",
+          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU"
+        }, 
+        {
+          "titulo": "Data Analytics For Beginners | Introduction To Data Analytics",
+          "url": "https://www.youtube.com/watch?v=fWE93St-RaQ"
+        }
+      ]
+    },
+    {
+      "titulo": "Música",
+      "cor": "rgb(64, 59, 211)",
+      "link_extra": {
+        "text": "Pop e Rock"
+      },
+      "videos": [
+        {
+          "titulo": "As Melhores de U2",
+          "url": "https://www.youtube.com/watch?v=dMCvhkbhmbM"
+        },
+        {
+          "titulo": "T.h.e * S.m.i.t.h.s...Best I (1992)",
+          "url": "https://www.youtube.com/watch?v=jEo2hs2N7r8"
+        },
+        {
+          "titulo": "T.h.e * S.m.i.t.h.s...Best ll (1992)",
+          "url": "https://www.youtube.com/watch?v=TvGqoS0sIaU"
+        },
+        {
+          "titulo": "Guns N' Roses Greatest Hits Full Album - Guns N' Roses Songs Playlist 2020",
+          "url": "https://www.youtube.com/watch?v=9hckPnzSDhg"
+        },
+        {
+          "titulo": "Best Of Aerosmith collection Aerosmith Greatest Hits Full Album",
+          "url": "https://www.youtube.com/watch?v=6hYYvQYzDY8"
+        }
+      ]
+    },
+    {
+      "titulo": "Filmes",
+      "cor": "#ff7800",
+      "link_extra": {
+        "text": "Clássicos do Cinema Pop"
+      },
+      "videos": [
+        {
+          "titulo": "Batman: O Cavaleiro das Trevas",
+          "url": "https://www.youtube.com/watch?v=EXeTwQWrcwY"
+        },
+        {
+          "titulo": "Homem-Aranha 2 (2004)",
+          "url": "https://www.youtube.com/watch?v=8pSRBdt6ico"
+        },
+        {
+          "titulo": "Watchmen",
+          "url": "https://www.youtube.com/watch?v=NUjMO_k9IF8"
+        },
+        {
+          "titulo": "Matrix",
+          "url": "https://www.youtube.com/watch?v=D4eJx-0g3Do"
+        }
+      ]
+    }
+  ]
+}
