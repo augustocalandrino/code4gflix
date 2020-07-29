@@ -13,10 +13,6 @@ const Button = styled.button`
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
-    &:hover,
-     &:focus {
-         opacity: .5;
-     }
 `;
 
 export default Button;
