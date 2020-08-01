@@ -1,18 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import useForm from '../../../hooks/useForm';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import videosRepository from '../../../repositories/videos';
+import categoriasRepository from '../../../repositories/categorias';
 
 function CadastroVideo() {
   const history = useHistory();
+  const [categorias, setCategorias] = useState([]);
+  const categoryTitles = categorias.map(({ titulo }) => titulo);
   const { handleChange, values } = useForm({
     titulo: 'Vídeo Padrão',
     url: 'https://www.youtube.com/watch?v=jOAU81jdi-c',
     categoria: 'Front End',
   });
+
+  useEffect(() => {
+    categoriasRepository
+      .getAll()
+      .then((categoriasFromServer) => {
+        setCategorias(categoriasFromServer);
+      });
+  }, []);
 
   return (
     <PageDefault>
@@ -22,10 +33,14 @@ function CadastroVideo() {
         event.preventDefault();
         // alert('Vídeo Castrado com Sucesso!');
 
+        const categoriaEscolhida = categorias.find((categoria) => categoria.titulo === values.categoria);
+
+        console.log('categoriaEscolhida', categoriaEscolhida);
+
         videosRepository.create({
           titulo: values.titulo,
           url: values.url,
-          categoriaID: 1,
+          categoriaId: 1,
         })
           .then(() => {
             console.log('funfou');
@@ -35,7 +50,7 @@ function CadastroVideo() {
       >
         <FormField
           label="Título do Vídeo"
-          type="text"
+          // type="text"
           name="titulo"
           value={values.titulo}
           onChange={handleChange}
@@ -43,7 +58,7 @@ function CadastroVideo() {
 
         <FormField
           label="URL do Vídeo"
-          type="text"
+          // type="text"
           name="url"
           value={values.url}
           onChange={handleChange}
@@ -51,10 +66,11 @@ function CadastroVideo() {
 
         <FormField
           label="Categoria"
-          type="text"
-          name="url"
+          // type="text"
+          name="categoria"
           value={values.categoria}
           onChange={handleChange}
+          suggestions={categoryTitles}
         />
 
         <Button type="submit">
