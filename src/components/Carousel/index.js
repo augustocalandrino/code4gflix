@@ -1,14 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
 import VideoCard from './components/VideoCard';
-import Slider, { SliderItem } from './components/Slider';
+import Slider, { SliderItem /* , SliderMobile */ } from './components/Slider';
+import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
 
-function Carousel({ ignoreFirstVideo, category }) {
+function VideoCardGroup({ ignoreFirstVideo, category }) {
   const categoryTitle = category.titulo;
   const categoryColor = category.cor;
   const categoryExtraLink = category.link_extra;
   const { videos } = category;
+
+  /* checklater */
   return (
     <VideoCardGroupContainer>
       {categoryTitle && (
@@ -21,7 +22,7 @@ function Carousel({ ignoreFirstVideo, category }) {
           )}
         </>
       )}
-      <Slider color={categoryColor}>
+      <Slider arrowColor={categoryColor}>
         {videos.map((video, index) => {
           if (ignoreFirstVideo && index === 0) {
             return null;
@@ -29,7 +30,11 @@ function Carousel({ ignoreFirstVideo, category }) {
 
           return (
             <SliderItem key={video.titulo}>
-              <VideoCard videoTitle={video.titulo} videoURL={video.url} categoryColor={categoryColor} />
+              <VideoCard
+                videoTitle={video.titulo}
+                videoURL={video.url}
+                categoryColor={categoryColor}
+              />
             </SliderItem>
           );
         })}
@@ -37,26 +42,5 @@ function Carousel({ ignoreFirstVideo, category }) {
     </VideoCardGroupContainer>
   );
 }
-Carousel.defaultProps = {
-  ignoreFirstVideo: false,
-};
-Carousel.propTypes = {
-  ignoreFirstVideo: PropTypes.bool,
-  category: PropTypes.shape({
-    titulo: PropTypes.string.isRequired,
-    link: PropTypes.string,
-    cor: PropTypes.string.isRequired,
-    link_extra: PropTypes.shape({
-      text: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
-    }),
-    videos: PropTypes.arrayOf(
-      PropTypes.shape({
-        titulo: PropTypes.string.isRequired,
-        url: PropTypes.string.isRequired,
-      }),
-    ).isRequired,
-  }).isRequired,
-};
 
-export default Carousel;
+export default VideoCardGroup;
