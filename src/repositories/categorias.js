@@ -10,7 +10,7 @@ function getAll() {
         return resposta;
       }
 
-      throw new Error('Não foi possível pegar os dados');
+      throw new Error('Não foi possível cadastrar a categoria');
     });
 }
 
@@ -22,7 +22,7 @@ function getAllWithVideos() {
         return resposta;
       }
 
-      throw new Error('Não foi possível pegar os dados');
+      throw new Error('Não foi possível cadastrar a categoria');
     });
 }
 

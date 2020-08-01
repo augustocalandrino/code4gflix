@@ -35,15 +35,15 @@ function CadastroVideo() {
 
         const categoriaEscolhida = categorias.find((categoria) => categoria.titulo === values.categoria);
 
-        console.log('categoriaEscolhida', categoriaEscolhida);
+        // console.log('categoriaEscolhida', categoriaEscolhida);
 
         videosRepository.create({
           titulo: values.titulo,
           url: values.url,
-          categoriaId: 1,
+          categoriaId: categoriaEscolhida.id,
         })
           .then(() => {
-            console.log('funfou');
+            // console.log('funfou');
             history.push('/');
           });
       }}
@@ -77,6 +77,9 @@ function CadastroVideo() {
           Cadastrar
         </Button>
       </form>
+
+      <br />
+      <br />
 
       <Link to="/cadastro/categoria">
         Cadastrar Categoria

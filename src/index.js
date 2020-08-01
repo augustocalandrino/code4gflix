@@ -7,7 +7,7 @@ import CadastroVideo from './pages/cadastro/Video';
 import CadastroCategoria from './pages/cadastro/Categoria';
 
 // Desafio - colocar uma página bonitinha
-//const Pagina404 = () => (<div>Página 404</div>)
+// const Pagina404 = () => (<div>Página 404</div>)
 
 ReactDOM.render(
   <BrowserRouter>
@@ -18,5 +18,5 @@ ReactDOM.render(
       <Route component={() => (<div>Página 404</div>)} />
     </Switch>
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
