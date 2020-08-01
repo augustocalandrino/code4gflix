@@ -5,8 +5,8 @@
       "titulo": "Front End",
       "cor": "#6BD1FF",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Conceitos, Técnicas e Novidades sobre Front End",
+        "url": "#"
       }
     },
     {
@@ -14,8 +14,8 @@
       "titulo": "Back End",
       "cor": "#00C86F",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
+        "text": "Conceitos, Técnicas e Novidades sobre Back End",
+        "url": "#"
       }
     },
     {
@@ -23,8 +23,8 @@
       "titulo": "Data Science e Inteligência Artificial",
       "cor": "#9cd33b",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/cursos-online-mobile"
+        "text": "Conceitos, Técnicas e Novidades sobre Data Science, BI, IA, Big Data",
+        "url": "#"
       }
     },
     {
@@ -37,8 +37,8 @@
       "titulo": "Games",
       "cor": "red",
       "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Games Variados, antigos e Novos",
+        "url": "#"
       }
     }
   ],
@@ -46,8 +46,8 @@
     {
       "id": 1,
       "categoriaId": 1,
-      "titulo": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "titulo": "Gerenciamento de estado com React",
+      "url": "https://www.youtube.com/watch?v=vouajCeALp8"
     },
     {
       "id": 2,

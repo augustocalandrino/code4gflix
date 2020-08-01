@@ -30,9 +30,9 @@ function Home() {
               <BannerMain
                 videoTitle={dadosIniciais[0].videos[0].titulo}
                 url={dadosIniciais[0].videos[0].url}
-                videoDescription="Sejam Todos Bem Vindos, aqui na {code4gflix}
-                você encontrará links para: Cursos | Boas Práticas | Análises | Filmes | Games
-                | Animes | Notícias Diversas."
+                videoDescription="Sejam Bem Vindos! Na {code4gflix}
+                você encontrará links relacionados a Programação e Análise de Dados, com: Cursos |
+                Boas Práticas | Análises | Além de Filmes | Games | Animes e Notícias Diversas."
               />
               <Carousel
                 ignoreFirstVideo
