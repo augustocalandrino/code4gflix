@@ -21,7 +21,11 @@ export const Title = styled.h3`
 export const ExtraLink = styled.a`
   margin-left: 16px;
   text-decoration: none;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
   @media (max-width: 800px) {
     display: block;
     margin-bottom: 16px;
@@ -37,7 +41,6 @@ export const VideoCardList = styled.ul`
   display: flex;
   overflow-x: auto;
   flex-direction: row;
-  scrollbar-width: thin;
   
   li {
     margin-right: 16px;
@@ -48,6 +51,5 @@ export const VideoCardGroupContainer = styled.section`
   color: white;
   min-height: 197px;
   margin-left: 5%;
-  margin-right: 5%;
   margin-bottom: 16px;
 `;

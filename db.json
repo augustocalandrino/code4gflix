@@ -210,6 +210,12 @@
       "url": "https://www.youtube.com/playlist?list=PLXik_5Br-zO9YVs9bxi7zoQlKq59VPTX1",
       "categoriaId": 1,
       "id": 28
+    },
+    {
+      "titulo": "4 mitos sobre programação",
+      "url": "https://www.youtube.com/watch?v=yj0FR_gm0sM",
+      "categoriaId": 1,
+      "id": 29
     }
   ]
 }
